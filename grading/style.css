@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.container{
+   
+    height: 100vh;
+}
+.right{
+   
+    margin-top: 150px;
+}
+.right input{
+    width: 400px;
+    padding :5px;
+    margin-top: 5px;
+}
+.left{
+    
+}
+table{
+    margin-top: 240px;
+    margin-left: 50px;
+    width: 300px;
+}
+.left table tr td{ 
+    border: 2px solid black;
+    padding: 5px;
+
+}
+
+

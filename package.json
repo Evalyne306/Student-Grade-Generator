@@ -1,0 +1,27 @@
+{
+  "name": "student-grade-generator",
+  "version": "1.0.0",
+  "description": "Grade generating application",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evalyne306/Student-Grade-Generator.git"
+  },
+  "keywords": [
+    "loops",
+    "if",
+    "else",
+    "parseInt",
+    "document.getElementById"
+  ],
+  "author": "Evalyne Wanjiku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evalyne306/Student-Grade-Generator/issues"
+  },
+  "homepage": "https://github.com/Evalyne306/Student-Grade-Generator#readme"
+}
