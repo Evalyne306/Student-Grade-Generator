@@ -1,25 +1,20 @@
 
-const prompt = require("prompt-sync")();
-//this will prompt the user to enter a value
-const speed = prompt("please Enter speed")
-
 function speedDetector(){
-  // the if .. else condition has been used to ensure all conditions are met
-  if (speed<70){
-    console.log('Ok')
-  }else if (speed>=70){
-    let points =(speed-70)/5
-    if (points<12){
-      console.log(`Your demerit points are ${points}`)
-    }else if(points>=12){
-      console.log(`you have ${points}.License suspended`)
-    }
-  }
+var speed = document.getElementById("speed").value
+var points = (speed - 70) / 5
+if(speed>70 && speed<=250){
+  if(points<12){
+   document.getElementById("status").innerHTML=(`You have ${points} demerit points: OK   `)
+}else {
+  document.getElementById("status").innerHTML=(`Sorry you have ${points} demerit points: LICENSE IS SUSPENDED   `)
 }
-//call function
-
-speedDetector()
-
+}else if(speed<=70){
+  document.getElementById("status").innerHTML=(`you are OK, no demerit points   `)
+}if(speed<=0 || speed>250){
+alert("Input correct speed please!")
+}
+    
+}
 
 
   
