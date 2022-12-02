@@ -5,54 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
     <link rel="stylesheet" href="style.css">
-    <title>SPEED DETECTOR</title>
+    <title>Student Grade Generator</title>
     <style>
       *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        text-align: center;
       }
       .body{
-        min-height: 100px;
+
+        height: 100vh;
         align-items: center;
         display: flex;
-        background-color: rgb(32, 37, 36);
+        background-color: blueviolet;
        justify-content: center;
        font-family: Georgia, 'Times New Roman', Times, serif;
       } 
       .container{
         padding: 50px;
         border-radius: 10px;
-        background-color: rgb(21, 61, 194);
+        background-color: aquamarine;
         min-width: 500px;
-        min-height: 500px;
+
       }
+      
       h1{
-        margin-bottom: 5px;
-       font-size: 40px;
-        text-align: center;
-        font-style: italic;
-        color: bisque;
-       
-        
-      }
-      h2{
         margin-bottom: 5px;
        font-size: 28px;
         text-align: center;
+        
       }
+
       .block{
         margin: 0 auto 12px;
        display: flex
-      }
-      .block1{
-        margin: 0 auto 12px;
-       display: flex
-      }
-      .block2{
-        margin: 0 auto 12px;
-       display: flex
+      
+
       }
       label{
         display: block;
@@ -67,7 +55,7 @@
         padding: 10px;
         width: 65%;
         font-size: 15px;
-        border-radius: 5px 5px;
+        border-radius: 0 5px 5px 0;
         outline: none;
       }
       .btnBlock{
@@ -75,9 +63,9 @@
         width: 100%;
       }
       .btn{
-        display:inline-block;
+        display:flex;
         padding: 15px;
-        background-color: rgb(34, 228, 235);
+        background-color: rgb(87, 216, 35);
         color: black;
         outline: none;
         border: none;
@@ -93,53 +81,59 @@
      
       }
       .btnReset{
-        background-color: rgb(190, 223, 47);
+        background-color: rgb(114, 97, 209);
+       
+      }
+      .gradebtn{
+        background-color: rgb(67, 223, 35);
+        width: 150px;
+        display:flex;
+        
+        
+        
+ 
+        
        
       }
       .acquired{
+        display: flex;
+        margin-top: 20px;
         padding: 50px;
-        border-radius: 10px;
-        background-color: rgb(224, 225, 235);
-        min-width: 200px;
-        min-height: 150px;
-        text-align: left;
-        font-size: 60px;
-
-      }
-      table{
-        border: 2px;
-      }
-      .hide{
-        display: none;
-
+        font-size: 80px;
+        text-align: center;
+        background-color: rgb(213, 214, 223);
+        width: 200px;
+        height: 200px
       }
 
     </style>
   </head>
   <body>
 <main class ="container">
-  <h1>SPEED DETECTOR</h1>
+  <h1>STUDENT GRADE GENERATOR</h1>
   <form action="" id ="frmCalc">
     <div class="block">
-    <input type="number"id ="speed" class="form-control" placeholder="Enter here">
-      <label for="speed">ENTER SPEED (km/h)</label>
-    </div>  
-    <div class="col-12 col-md-8 left">
-      <button type="button" class="btn" onclick="netSalaryCalculator()">CALCULATE</button>
+      <input type="number"id ="marks" class="form-control" placeholder="Enter here" min="0" max="100" required>
+      <label for="marks">ENTER MARKS HERE </label>
+    </div> 
+    <div class="btnBlock">
+      <button type="button" class="btn" onclick="results()">CALCULATE</button>
       <a href="" class="btn btnReset">RESET</a>
     </div>
-  
   </form>
-
 </main>
 <div class="acquired">
-    <table>
-      <tr>
-          <th>Status</th>
-          <td id ="status"></td>
-      </tr>
-    </table>
-  </div>
-    <script src="index.js"></script>
+  <table>
+    <tr>
+      <td id ="grade"></td>
+    </tr>
+  </table>
+</div>
+<p class= "grade">GRADE</p>
+<div class="conatainer2">
+<input type="button" onclick=window.location.href="http://127.0.0.1:5502/home.html" class="gradebtn" value="Home Page"/>
+</div>
+    <script src="app.js"></script>
+   
   </body>
 </html>
