@@ -29,8 +29,12 @@ NB: Use KRA, NHIF, and NSSF values provided in the link below.
 
 https://www.aren.co.ke/payroll/taxrates.htm
 
+## Getting started using link
+To visit the web page directly you can use the link below or alternatively you can open using the terminal as directed below;
 
-## Getting Started
+https://silly-lily-48cfdd.netlify.app/
+
+## Getting Started using terminal
 -You will need a computer that runs on the following;
 (Windows 7+, Linux, Mac OS)
 -nodejs 9.0+
